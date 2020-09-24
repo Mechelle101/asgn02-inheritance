@@ -10,11 +10,17 @@ class Animal {
 }
 
 class Dog extends Animal {
+    public $tail; 
 
+    public function tail_wags() {
+        echo "Dogs tail wags"; 
+    }
 }
 
 class Bird extends Animal {
+    //public; 
 
+    // public function 
 }
 
 $fish = new Animal;
@@ -24,6 +30,7 @@ $fish->can_fly = 'no';
 $husky = new Dog;
 $husky->legs = 4;
 $husky->can_fly = 'no';
+$husky->tail_wags();
 
 $robin = new Bird;
 $robin->legs = 2;
